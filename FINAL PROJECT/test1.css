@@ -1,0 +1,36 @@
+#chart{
+    margin:auto;
+}
+#grid{
+    margin:0.5%;
+   
+}
+#box{
+    margin:50px ;
+    width: 60%;
+    border: 5px solid cyan;
+    padding:20px;
+    background-color:navy;
+    
+    
+}
+head{
+    background-color: white;
+}
+#label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+#startdate{
+    float: right;
+    color: white;
+}
+#YUVO{
+    color: cyan;
+    float: right;
+    font-size: 80px;
+    padding-right:150px ;
+    display: block;
+    margin:20px 0 auto 0;
+}

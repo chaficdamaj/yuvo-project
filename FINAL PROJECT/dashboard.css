@@ -1,0 +1,20 @@
+#grid .k-grid-toolbar
+        {
+            padding: .6em 1.3em .6em .4em;
+        }
+        .category-label
+        {
+            vertical-align: middle;
+            padding-right: .5em;
+        }
+        #category
+        {
+            vertical-align: middle;
+        }
+        .refreshBtnContainer {
+            display: inline-block;
+        }
+        .toolbar {
+            margin-left: auto;
+            margin-right: 0;
+        }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+    <script src="test1.js"></script>
+    <link href="https://kendo.cdn.telerik.com/2022.1.412/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="https://kendo.cdn.telerik.com/2022.1.412/styles/kendo.default.min.css" rel="stylesheet" />
+    <script src="https://kendo.cdn.telerik.com/2022.1.412/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2022.1.412/js/kendo.all.min.js"></script>
+    <link rel="stylesheet" href="test1.css">
+    <!--< script src = "https://kendo.cdn.telerik.com/2022.1.412/js/messages/kendo.messages.fr-FR.min.js" ></script > -->
+  <title>KPI</title>
+  
+
+</head>
+<p id="YUVO">YUVO</p>
+  <div id="box">
+    <div id="startdate">
+      <label id="label1" for="start">Start date:</label>
+
+<input type="date" id="start" name="trip-start"
+       value=""
+       min="2018-01-01" max="2018-12-31">
+       <label id="label1" for="start">TO:</label>
+
+<input type="date" id="to" name="trip-start"
+       value=""
+       min="2018-01-01" max="2018-12-31">
+
+    </div>
+
+    <div class="radio-btns-for-grid" >
+    <input type="radio" id="hourlydata" name="data" value="data-hourly" onchange="getValue(this)" >
+    <label for="hourlydata" style="color: white;">Hourly Data</label><br>
+
+    <input type="radio" id="dailydata" name="data" value="data-daily" onchange="getValue(this)"  >
+    <label for="dailydata" style="color: white;">Daily Data</label><br>
+  
+  </div >
+  
+
+  <div class="nealias">
+    <input type="radio"  name="link" value="TN-ALT13.1" onchange="getnealias(this)" >
+    <label for="hourlydata"  style="color: white;">TN-ALT13.1</label><br>
+    <input type="radio"  name="link" value="TN-AI4440.1" onchange="getnealias(this)" >
+    <label for="hourlydata"  style="color: white;">TN-AI4440.1</label><br>
+    <input type="radio"  name="link" value="AL5983.1" onchange="getnealias(this)" >
+    <label for="hourlydata"  style="color: white;">AL5983.1</label><br>
+  </div>
+
+</div>
+
+<body style="background-color:  black">
+  
+  
+  <div id="chart" style="width:1400px; height: 400px"></div>
+
+      <div id="grid" style="width: 500; height: 500;"></div>
+</body>
+</html>
